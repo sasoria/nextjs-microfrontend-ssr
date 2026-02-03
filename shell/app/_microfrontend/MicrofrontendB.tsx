@@ -2,7 +2,7 @@ import parse from 'html-react-parser'
 import { validate } from "@/app/utils"
 
 export default async function Microfrontend() {
-    const response = await fetch(`http://localhost:4321`)
+    const response = await fetch(`http://localhost:5000`)
     const html = await response.text()
     const microfrontend = parse(html)
 
