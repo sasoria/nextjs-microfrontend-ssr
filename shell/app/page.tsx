@@ -1,4 +1,4 @@
-import Microfrontend from "@/microfrontend/Microfrontend";
+import Microfrontend from "@/app/_microfrontend/Microfrontend";
 import { Suspense } from "react";
 
 export default function Home() {
