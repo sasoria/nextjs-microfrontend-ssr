@@ -1,8 +1,12 @@
-import parse from 'html-react-parser'
+import parse from "html-react-parser"
 import { validate } from "@/app/utils"
 
-export default async function Microfrontend() {
-    const response = await fetch(`http://localhost:5000`)
+interface Props {
+    url: string
+}
+
+export default async function Microfrontend({ url }: Props) {
+    const response = await fetch(url)
     const html = await response.text()
     const microfrontend = parse(html)
 

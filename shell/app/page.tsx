@@ -1,5 +1,4 @@
-import MicrofrontendA from "@/app/_microfrontend/MicrofrontendA";
-import MicrofrontendB from "@/app/_microfrontend/MicrofrontendB";
+import Microfrontend from "@/app/_microfrontend/Microfrontend";
 import { Suspense } from "react";
 
 export default function Home() {
@@ -12,10 +11,10 @@ export default function Home() {
               netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et
               ultrices posuere cubilia curae; Integer ac sem euismod, dictum erat at, dictum enim.</p>
           <Suspense fallback={<div>Loading...</div>}>
-              <MicrofrontendA />
+              <Microfrontend url="http://localhost:4000"/>
           </Suspense>
           <Suspense fallback={<div>Loading...</div>}>
-              <MicrofrontendB />
+              <Microfrontend url="http://localhost:5000"/>
           </Suspense>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, urna eu tincidunt consectetur, nisi nisl aliquam enim, eget facilisis enim nisl nec elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer ac sem euismod, dictum erat at, dictum enim. Mauris euismod, sapien eu dictum dictum, sem enim dictum enim, eu dictum sem enim euismod enim. Etiam euismod, urna eu tincidunt consectetur, nisi nisl aliquam enim, eget facilisis enim nisl nec elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer ac sem euismod, dictum erat at, dictum enim. Mauris euismod, sapien eu dictum dictum, sem enim dictum enim, eu dictum sem enim euismod enim. Etiam euismod, urna eu tincidunt consectetur, nisi nisl aliquam enim, eget facilisis enim nisl nec elit.
           </p>
